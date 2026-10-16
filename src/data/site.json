@@ -5,5 +5,6 @@
   "email": "joshua@example.com",
   "github": "https://github.com/FRIEND_GITHUB_USERNAME",
   "linkedin": "https://www.linkedin.com/in/your-profile",
-  "ogImage": "/uploads/placeholder-og.svg"
+  "ogImage": "",
+  "resume": ""
 }

@@ -16,6 +16,12 @@ gallery:
   - image: /uploads/high-power-rocket-2.svg
     alt: "Placeholder gallery image 2 for High-Power Rocket"
     caption: "Placeholder caption 2"
+specSheet:
+  - { label: "Apogee", value: "4,200 ft" }
+  - { label: "Max velocity", value: "Mach 0.62" }
+  - { label: "Length", value: "2.1 m" }
+  - { label: "Liftoff mass", value: "6.8 kg" }
+  - { label: "Motor", value: "J-class" }
 specs:
   - Fiberglass airframe
   - Altimeter + GPS

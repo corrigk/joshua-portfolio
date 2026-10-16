@@ -16,6 +16,11 @@ gallery:
   - image: /uploads/machined-gearbox-2.svg
     alt: "Placeholder gallery image 2 for Precision Machined Gearbox"
     caption: "Placeholder caption 2"
+specSheet:
+  - { label: "Ratio", value: "12 : 1" }
+  - { label: "Bore tolerance", value: "±0.01 mm" }
+  - { label: "Material", value: "6061-T6" }
+  - { label: "Mass", value: "1.4 kg" }
 specs:
   - 6061 aluminum
   - CNC mill

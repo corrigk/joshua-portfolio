@@ -9,6 +9,10 @@ status: in-progress
 placeholder: true
 cover: /uploads/wind-tunnel-rig.svg
 coverAlt: "Placeholder cover image for Benchtop Wind Tunnel"
+specSheet:
+  - { label: "Test section", value: "300 × 300 mm" }
+  - { label: "Max speed", value: "18 m/s" }
+  - { label: "Balance", value: "3-axis load cell" }
 specs:
   - Load cells
   - Arduino

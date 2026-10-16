@@ -13,6 +13,10 @@ gallery:
   - image: /uploads/desk-trebuchet-1.svg
     alt: "Placeholder gallery image 1 for Desk Trebuchet"
     caption: "Placeholder caption 1"
+specSheet:
+  - { label: "Range", value: "6.5 m" }
+  - { label: "Counterweight", value: "1.2 kg" }
+  - { label: "Payload", value: "1 marshmallow" }
 specs:
   - Birch plywood
   - Laser cutter

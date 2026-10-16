@@ -13,6 +13,11 @@ gallery:
   - image: /uploads/rc-flying-wing-1.svg
     alt: "Placeholder gallery image 1 for RC Flying Wing"
     caption: "Placeholder caption 1"
+specSheet:
+  - { label: "Wingspan", value: "1.2 m" }
+  - { label: "AUW", value: "780 g" }
+  - { label: "Wing loading", value: "21 g/dm²" }
+  - { label: "Endurance", value: "14 min" }
 specs:
   - EPP foam
   - Brushless motor
