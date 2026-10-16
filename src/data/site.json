@@ -1,0 +1,10 @@
+{
+  "name": "Joshua Smith",
+  "tagline": "Designing and building physical things: rockets, planes, and precision-manufactured parts.",
+  "intro": "I design, machine and test hardware, from aerospace projects to manufacturing tooling, and I build the occasional ridiculous machine just because it's fun.",
+  "defaultTheme": "editorial",
+  "email": "joshua@example.com",
+  "github": "https://github.com/FRIEND_GITHUB_USERNAME",
+  "linkedin": "https://www.linkedin.com/in/your-profile",
+  "ogImage": "/uploads/placeholder-og.svg"
+}
