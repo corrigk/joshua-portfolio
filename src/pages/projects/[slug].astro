@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import MissionPatch from '../../components/MissionPatch.astro';
 import { getCollection, render } from 'astro:content';
 import { url, fmtDate, videoEmbed, base } from '../../lib';
 
@@ -25,8 +26,14 @@ const linkItems = [
   <article class="wrap" style="padding-block:3rem">
     <p><a href={url('/projects/')}>← All projects</a></p>
     <p class="meta"><span class="pill">{d.category}</span><span>{fmtDate(d.date)}</span><span class="pill alt">{d.status}</span></p>
-    <h1>{d.title}</h1>
-    <p class="muted" style="font-size:1.2rem;max-width:60ch">{d.summary}</p>
+    <div class="detail-head">
+      <div>
+        <h1>{d.title}</h1>
+        <p class="muted" style="font-size:1.2rem;max-width:60ch">{d.summary}</p>
+      </div>
+      <MissionPatch title={d.title} category={d.category} date={d.date} status={d.status} />
+    </div>
+    <div class="dim" aria-hidden="true"><i></i><span>Fig. 1 · {d.title}</span><i></i></div>
     <img class="detail-cover" src={url(d.cover)} alt={d.coverAlt} width="1280" height="720" decoding="async" />
 
     <div class="detail-grid">
@@ -45,6 +52,15 @@ const linkItems = [
               <span>Not loading? Some sites block embedding.</span>
               <a href={demoSrc.startsWith('http') ? demoSrc : demoSrc} target="_blank" rel="noopener">Open demo in a new tab ↗</a>
             </p>
+          </section>
+        )}
+
+        {d.model && (
+          <section style="padding-block:2rem 0" aria-labelledby="model-h">
+            <h2 id="model-h">3D model</h2>
+            <model-viewer class="model-viewer" src={url(d.model)} alt={`3D model of ${d.title}`} camera-controls auto-rotate shadow-intensity="0.6" exposure="1.1" loading="lazy"></model-viewer>
+            <p class="demo-actions"><span>Drag to rotate · scroll or pinch to zoom</span></p>
+            <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js" is:inline></script>
           </section>
         )}
 
